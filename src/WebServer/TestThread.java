@@ -16,7 +16,7 @@ class TestThread extends Thread{
             System.out.println("线程：" + Thread.currentThread().getName());  
             System.out.println("连接到服务器的用户：" + connection);  
             try{  
-                Client request = new Client(connection.getInputStream());  
+                Browser request = new Browser(connection.getInputStream());  
                 request.parse();  
                 Server response = new Server();  
                 response.setRequest(request);  

@@ -4,14 +4,14 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 
 class Server{  
-    private Client request;//用于读取资源的uri  
+    private Browser request;//用于读取资源的uri  
     private OutputStream outputStream;//用于输出资源  
     
     public void setOutputStream(OutputStream outputStream) {  
         this.outputStream = outputStream;  
     }  
       
-    public void setRequest(Client request) {  
+    public void setRequest(Browser request) {  
         this.request = request;  
     }  
       
